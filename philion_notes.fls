@@ -1,0 +1,12 @@
+PWD /Users/azycat/fakecode/LaTeXparty
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT philion_notes.tex
+OUTPUT philion_notes.log
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty

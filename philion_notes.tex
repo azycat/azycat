@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{NaturalDeduction}
+
+\usepackage{amsmath} %american mathematical society
+%use bibtex to reformat bibliography
+
+\title{MyFirstDocument}
+\author{stinkybug3}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+%backslashes introduce commands
+%you can take notes in the world of noumena that dont show up in the
+%world of phenomena
+
+\tableofcontents
+
+\section{Introduction}
+lorem ipsum dolor sit amat. lorem ipsum dolor sit amat. lorem ipsum dolor sit amat. lorem ipsum dolor sit amat. lorem ipsum dolor sit amat.
+
+\noindent Lorem ipsum dolor sit amet:
+$a+b=C$
+
+\begin{align}
+    a^2+b^2=c^2
+\end{align} %align* eliminates the number
+
+\subsection{Logical notation}
+
+\begin{center}
+\begin{tabular}{cc|ccccc}
+     $P$ & $Q$ & $P\wedge Q$ & $P\vee Q$ & $\neg P$ & $P\to Q$ &
+     $P\leftrightarrow Q$
+     %P\to Q or P\rightarrow Q
+     \\[0.25cm]
+     %backslash backslash
+     %square brackets are for optional things
+     %curly braces are for things you have to put
+     \hline
+     $\top$ &$\bot$ &
+\end{tabular}
+\end{center}
+
+Universal: $\forall xPx$
+
+Exists: $\exists xPx$
+
+Conjunction: $P\wedge Q$
+
+Disjunction: $P\vee Q$
+
+\subsubsection{A deduction}
+
+\begin{center}
+    \begin{fitch}
+    \prem{1}{$P\wedge Q$}{prem}
+    \getline{2}{$P$}{$\wedge$Elim 1}
+    \open
+    \getline{3}{$R$}{Supp/CP}
+    \getline{4}{$S$}{Magic!}
+    \close
+    \getline{5}{$R\to S$}{CP 3-4}
+    \close
+    \end{fitch}
+    %|close
+    %
+    \begin{fitch}{SuppLineFalse}
+    \open\getline{6}{something}{magic again}
+    \close\getline{7}{P}{Bingo}
+    \end{fitch}
+\end{center}
+
+\end{document}
+
+
